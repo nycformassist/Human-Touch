@@ -2,6 +2,7 @@ import Hero from './components/Hero';
 import AboutValentine from './components/AboutValentine';
 import SaintMartinMethod from './components/SaintMartinMethod';
 import Experiences from './components/Experiences';
+import Booking from './components/Booking';
 import Footer from './components/Footer';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <AboutValentine />
         <SaintMartinMethod />
         <Experiences />
+        <Booking />
       </main>
       <Footer />
     </div>
