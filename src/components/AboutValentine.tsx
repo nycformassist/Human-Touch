@@ -24,13 +24,16 @@ export default function AboutValentine() {
           <span className="text-sm tracking-widest text-[#59604E] uppercase mb-6 block font-sans">
             The Practitioner
           </span>
-          <h2 className="text-4xl lg:text-5xl mb-8 text-[#2E2E2E]">Valentine Saint Martin</h2>
+          <h2 className="text-4xl lg:text-5xl mb-8 text-[#2E2E2E]">Meet Valentine Saint Martin</h2>
           <div className="space-y-6 text-[#2E2E2E]/80 font-sans leading-relaxed">
             <p>
-              For nearly two decades I have dedicated my life to understanding the relationship between the mind, body, breath, and human connection.
+              For more than 18 years, I've studied how breath, movement, mindfulness, and compassionate human presence influence our ability to recover from stress.
             </p>
             <p>
-              Created by Valentine Saint Martin, The Human Anchor™ is a professional somatic wellness practice helping people regulate stress, reconnect with themselves, and restore emotional balance.
+              My work combines a background in Biology and Exercise Science with years of Qigong practice and meditation instruction to create personalized experiences that help clients reconnect with calm, presence, and themselves.
+            </p>
+            <p className="text-sm text-[#59604E] font-medium pt-2">
+              Developed through nearly two decades of practice by Valentine Saint Martin.
             </p>
           </div>
         </motion.div>

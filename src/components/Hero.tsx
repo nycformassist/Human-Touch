@@ -1,3 +1,4 @@
+// src/components/Hero.tsx
 import { motion } from 'framer-motion';
 
 export default function Hero() {
@@ -11,20 +12,26 @@ export default function Hero() {
           className="max-w-xl"
         >
           <span className="text-sm tracking-widest text-[#59604E] uppercase mb-6 block font-sans">
-            Professional Somatic Wellness • Therapeutic Touch
+            Stress • Burnout • Constant Overthinking
           </span>
-          <h1 className="text-5xl lg:text-7xl leading-tight mb-8 text-[#2E2E2E]">
+          <h1 className="text-5xl lg:text-7xl leading-tight mb-6 text-[#2E2E2E]">
             When the World Feels Heavy...<br />
             <span className="italic">Find Your Anchor.</span>
           </h1>
-          <div className="flex flex-col sm:flex-row gap-6 mt-12">
+          <p className="text-lg text-[#2E2E2E]/80 font-sans mb-10 leading-relaxed">
+            Professional Therapeutic Touch, Guided Meditation, Breathwork, and Somatic Wellness in New York City—designed to help you reconnect with yourself and experience deep relaxation in a safe, compassionate environment.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-6 mb-8">
             <a href="#book" className="bg-[#B38A58] text-white px-8 py-4 text-center hover:bg-[#59604E] transition-colors duration-300 font-sans tracking-wide text-sm">
-              Book Discovery Call
+              Book Your Complimentary Human Anchor™ Assessment
             </a>
             <a href="#method" className="border border-[#2E2E2E]/20 text-[#2E2E2E] px-8 py-4 text-center hover:border-[#2E2E2E] transition-colors duration-300 font-sans tracking-wide text-sm">
-              The Saint Martin Method
+              How It Works
             </a>
           </div>
+          <p className="text-xs text-[#2E2E2E]/60 font-sans tracking-wide">
+            Serving clients throughout New York City including Manhattan, Brooklyn, Queens, and the Bronx by appointment.
+          </p>
         </motion.div>
         <motion.div 
           initial={{ opacity: 0 }}
