@@ -6,6 +6,7 @@ import AboutValentine from './components/AboutValentine';
 import SaintMartinMethod from './components/SaintMartinMethod';
 import Experiences from './components/Experiences';
 import Booking from './components/Booking';
+import IntakeForm from './components/IntakeForm';
 import Footer from './components/Footer';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <SaintMartinMethod />
         <Experiences />
         <Booking />
+        <IntakeForm />
       </main>
       <Footer />
     </div>

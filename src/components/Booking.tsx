@@ -29,11 +29,17 @@ export default function Booking() {
           </li>
         </ul>
         <a 
-          href="mailto:valentine@thehumananchor.com" 
+          href="#intake" 
           className="inline-block bg-[#2E2E2E] text-[#F8F5F1] px-10 py-4 font-sans tracking-wide text-sm hover:bg-[#B38A58] transition-colors duration-300"
         >
           Book Your Complimentary Human Anchor™ Assessment
         </a>
+        <p className="text-xs text-[#2E2E2E]/60 font-sans mt-4">
+          Prefer email? Reach out directly at{' '}
+          <a href="mailto:valentine@thehumananchor.com" className="underline hover:text-[#B38A58]">
+            valentine@thehumananchor.com
+          </a>
+        </p>
       </div>
     </section>
   );
