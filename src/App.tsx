@@ -1,24 +1,25 @@
-
 import Hero from './components/Hero';
-import PainPoints from './components/PainPoints';
-import TrustBar from './components/TrustBar';
-import AboutValentine from './components/AboutValentine';
-import SaintMartinMethod from './components/SaintMartinMethod';
+import TheScience from './components/TheScience';
+import TheHumanAnchor from './components/TheHumanAnchor';
+import MeetValentine from './components/MeetValentine';
+import Framework from './components/Framework';
 import Experiences from './components/Experiences';
-import Booking from './components/Booking';
+import Research from './components/Research';
+import IntakeForm from './components/IntakeForm'; // Your SendGrid integrated form
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col w-full overflow-x-hidden bg-[#F8F5F1]">
+    <div className="min-h-screen flex flex-col w-full overflow-x-hidden bg-[#F8F5F1] text-[#2E2E2E] font-sans">
       <main className="flex-grow">
         <Hero />
-        <PainPoints />
-        <TrustBar />
-        <AboutValentine />
-        <SaintMartinMethod />
+        <TheScience />
+        <TheHumanAnchor />
+        <MeetValentine />
+        <Framework />
         <Experiences />
-        <Booking />
+        <Research />
+        <IntakeForm />
       </main>
       <Footer />
     </div>

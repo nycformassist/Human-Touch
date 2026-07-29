@@ -1,27 +1,33 @@
-
 export default function Footer() {
   return (
-    <footer className="bg-[#2E2E2E] text-[#F8F5F1] py-16 px-6 text-center">
-      <div className="max-w-4xl mx-auto space-y-6">
-        <h3 className="font-serif text-2xl mb-2">The Human Anchor™</h3>
-        <p className="text-sm font-sans text-[#F8F5F1]/60 uppercase tracking-widest">
-          Developed through nearly two decades of practice by Valentine Saint Martin • Professional Somatic Wellness • New York City
-        </p>
-        <div className="flex flex-wrap justify-center gap-6 text-xs font-sans text-[#F8F5F1]/80 pt-4">
-          <a href="#professional-standards" className="hover:text-white transition-colors">Professional Standards</a>
-          <span>•</span>
-          <a href="#privacy" className="hover:text-white transition-colors">Privacy</a>
-          <span>•</span>
-          <a href="#terms" className="hover:text-white transition-colors">Terms</a>
-          <span>•</span>
-          <a href="#disclaimer" className="hover:text-white transition-colors">Disclaimer</a>
+    <footer className="bg-[#2E2E2E] text-[#F8F5F1]/70 py-16 px-6 text-sm font-sans">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
+        <div>
+          <h4 className="text-[#F8F5F1] text-lg mb-4 font-light">The Human Anchor™</h4>
+          <p className="leading-relaxed">
+            Professional Somatic Wellness, Qigong, and Certified Meditation Instruction in New York City.
+          </p>
         </div>
-        <div className="flex justify-center space-x-6 text-xs font-sans text-[#F8F5F1]/80 pt-2">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
-          <a href="mailto:valentine@thehumananchor.com" className="hover:text-white transition-colors">Email</a>
-          <span className="text-[#F8F5F1]/40">New York City, NY</span>
+        <div>
+          <h4 className="text-[#F8F5F1] text-lg mb-4 font-light">Locations</h4>
+          <p className="leading-relaxed">
+            By appointment only.<br/>
+            Serving private clientele across Manhattan, Brooklyn, Queens, and the Bronx.
+          </p>
         </div>
+        <div>
+          <h4 className="text-[#F8F5F1] text-lg mb-4 font-light">Practice Policies</h4>
+          <ul className="space-y-2">
+            <li>Fully Clothed Sessions</li>
+            <li>Consent-Based Practice</li>
+            <li>Confidentiality Guaranteed</li>
+            <li>No Unscheduled Walk-ins</li>
+          </ul>
+        </div>
+      </div>
+      <div className="max-w-6xl mx-auto mt-16 pt-8 border-t border-[#F8F5F1]/10 text-center text-xs opacity-50">
+        <p>© {new Date().getFullYear()} The Human Anchor™. All Rights Reserved.</p>
+        <p className="mt-2">The services provided are educational and somatic in nature and are not a substitute for medical care, licensed psychotherapy, or licensed massage therapy.</p>
       </div>
     </footer>
   );

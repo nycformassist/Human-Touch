@@ -1,48 +1,37 @@
-// src/components/Hero.tsx
-import { motion } from 'framer-motion';
-
 export default function Hero() {
   return (
-    <section id="home" className="min-h-[90vh] flex items-center bg-[#F8F5F1] pt-24 pb-16 px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-        <motion.div 
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          className="max-w-xl"
-        >
-          <span className="text-sm tracking-widest text-[#59604E] uppercase mb-6 block font-sans">
-            Stress • Burnout • Constant Overthinking
-          </span>
-          <h1 className="text-5xl lg:text-7xl leading-tight mb-6 text-[#2E2E2E]">
-            When the World Feels Heavy...<br />
-            <span className="italic">Find Your Anchor.</span>
-          </h1>
-          <p className="text-lg text-[#2E2E2E]/80 font-sans mb-10 leading-relaxed">
-            Professional Therapeutic Touch, Guided Meditation, Breathwork, and Somatic Wellness in New York City—designed to help you reconnect with yourself and experience deep relaxation in a safe, compassionate environment.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 mb-8">
-            <a href="#book" className="bg-[#B38A58] text-white px-8 py-4 text-center hover:bg-[#59604E] transition-colors duration-300 font-sans tracking-wide text-sm">
-              Book Your Complimentary Human Anchor™ Assessment
-            </a>
-            <a href="#method" className="border border-[#2E2E2E]/20 text-[#2E2E2E] px-8 py-4 text-center hover:border-[#2E2E2E] transition-colors duration-300 font-sans tracking-wide text-sm">
-              How It Works
-            </a>
-          </div>
-          <p className="text-xs text-[#2E2E2E]/60 font-sans tracking-wide">
-            Serving clients throughout New York City including Manhattan, Brooklyn, Queens, and the Bronx by appointment.
-          </p>
-        </motion.div>
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.5, delay: 0.3 }}
-          className="h-[70vh] bg-[#ECE6DD] relative flex items-center justify-center border border-[#2E2E2E]/10"
-        >
-          <span className="text-[#2E2E2E]/40 font-sans tracking-widest uppercase text-sm">
-            [Editorial Sanctuary Image]
-          </span>
-        </motion.div>
+    <section className="relative w-full min-h-[90vh] flex flex-col justify-center items-center text-center px-6 py-20 bg-[#F8F5F1]">
+      <div className="max-w-4xl mx-auto z-10 space-y-8">
+        <span className="text-sm tracking-widest text-[#59604E] uppercase font-semibold">
+          When the World Feels Heavy...
+        </span>
+        <h1 className="text-5xl md:text-7xl font-light text-[#2E2E2E] tracking-tight">
+          Find Your Anchor.
+        </h1>
+        <p className="text-sm md:text-base text-[#2E2E2E]/70 max-w-2xl mx-auto leading-relaxed uppercase tracking-wider">
+          Professional Somatic Wellness • Guided Meditation • Qigong • Breathwork • Human Presence • Nervous System Education
+        </p>
+        <div className="pt-8">
+          <a 
+            href="#intake" 
+            className="inline-block bg-[#2E2E2E] text-[#F8F5F1] px-8 py-4 text-sm tracking-widest uppercase hover:bg-[#B38A58] transition-colors duration-300"
+          >
+            Book Your Confidential Consultation
+          </a>
+        </div>
+      </div>
+      
+      {/* Visual Ambience Grid - Replacing the single face portrait */}
+      <div className="w-full max-w-7xl mx-auto mt-24 grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
+        <div className="h-80 bg-gray-200 overflow-hidden">
+          <img src="/images/room-ambience.jpg" alt="Serene minimalist room with natural morning light" className="w-full h-full object-cover opacity-90" />
+        </div>
+        <div className="h-80 bg-gray-200 overflow-hidden">
+          <img src="/images/window-rain.jpg" alt="Looking out a window at falling rain" className="w-full h-full object-cover opacity-90" />
+        </div>
+        <div className="h-80 bg-gray-200 overflow-hidden hidden md:block">
+          <img src="/images/reading-presence.jpg" alt="Person peacefully reading a book" className="w-full h-full object-cover opacity-90" />
+        </div>
       </div>
     </section>
   );
