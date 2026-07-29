@@ -1,4 +1,4 @@
-// src/components/Research.tsx
+
 
 export default function Research() {
   return (

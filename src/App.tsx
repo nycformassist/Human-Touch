@@ -5,7 +5,7 @@ import MeetValentine from './components/MeetValentine';
 import Framework from './components/Framework';
 import Experiences from './components/Experiences';
 import Research from './components/Research';
-import IntakeForm from './components/IntakeForm'; // Your SendGrid integrated form
+import IntakeForm from './components/IntakeForm';
 import Footer from './components/Footer';
 
 function App() {
