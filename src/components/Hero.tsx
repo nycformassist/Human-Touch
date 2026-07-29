@@ -21,16 +21,28 @@ export default function Hero() {
         </div>
       </div>
       
-      {/* Visual Ambience Grid - Replacing the single face portrait */}
+      {/* Visual Ambience Grid */}
       <div className="w-full max-w-7xl mx-auto mt-24 grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
-        <div className="h-80 bg-gray-200 overflow-hidden">
-          <img src="/images/room-ambience.jpg" alt="Serene minimalist room with natural morning light" className="w-full h-full object-cover opacity-90" />
+        <div className="h-80 bg-gray-200 overflow-hidden relative group">
+          <img 
+            src="/images/space-regulation.jpg" 
+            alt="A space designed for nervous system regulation" 
+            className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" 
+          />
         </div>
-        <div className="h-80 bg-gray-200 overflow-hidden">
-          <img src="/images/window-rain.jpg" alt="Looking out a window at falling rain" className="w-full h-full object-cover opacity-90" />
+        <div className="h-80 bg-gray-200 overflow-hidden relative group">
+          <img 
+            src="/images/sanctuary-rain.jpg" 
+            alt="Sanctuary from the overstimulated world" 
+            className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" 
+          />
         </div>
-        <div className="h-80 bg-gray-200 overflow-hidden hidden md:block">
-          <img src="/images/reading-presence.jpg" alt="Person peacefully reading a book" className="w-full h-full object-cover opacity-90" />
+        <div className="h-80 bg-gray-200 overflow-hidden hidden md:block relative group">
+          <img 
+            src="/images/presence-safety.jpg" 
+            alt="Reconnecting with presence and safety" 
+            className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" 
+          />
         </div>
       </div>
     </section>
