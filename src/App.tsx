@@ -1,24 +1,33 @@
 import Hero from './components/Hero';
-import ProblemSection from './components/ProblemSection';
+import WhoWeServe from './components/WhoWeServe';
+import Methodology from './components/Methodology';
+import Programs from './components/Programs';
 import MeetValentine from './components/MeetValentine';
-import FourPillars from './components/FourPillars';
-import ServicesMenu from './components/ServicesMenu';
-import CorporateCTA from './components/CorporateCTA';
 import IntakeForm from './components/IntakeForm';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col w-full overflow-x-hidden bg-[#F8F5F1] text-[#2E2E2E] font-sans">
-      <main className="flex-grow">
-        <Hero />
-        <ProblemSection />
-        <MeetValentine />
-        <FourPillars />
-        <ServicesMenu />
-        <CorporateCTA />
-        <IntakeForm />
-      </main>
+    <div className="min-h-screen bg-[#F8F5F1] selection:bg-[#B38A58] selection:text-white">
+      {/* 1. Introduction */}
+      <Hero />
+      
+      {/* 2. Disqualify the wrong people, attract the right ones */}
+      <WhoWeServe />
+      
+      {/* 3. Prove how it works conceptually */}
+      <Methodology />
+      
+      {/* 4. Show the deliverables/offerings */}
+      <Programs />
+      
+      {/* 5. Build authority with the founder bio */}
+      <MeetValentine />
+      
+      {/* 6. Close the deal with the application */}
+      <IntakeForm />
+      
+      {/* 7. Legal/Navigation */}
       <Footer />
     </div>
   );
