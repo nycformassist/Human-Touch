@@ -6,9 +6,10 @@ export default function IntakeForm() {
     fullName: '',
     email: '',
     phone: '',
-    experience: '',
-    goals: '',
-    preferredExperience: 'Human Anchor Signature Experience'
+    role: '',
+    catalyst: '',
+    outcome: '',
+    programInterest: 'The Human Anchor™ Assessment'
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -43,19 +44,19 @@ export default function IntakeForm() {
       <div className="max-w-3xl mx-auto bg-white p-8 lg:p-16 border border-[#2E2E2E]/10 shadow-sm">
         <div className="text-center mb-12">
           <span className="text-sm tracking-widest text-[#59604E] uppercase mb-4 block font-sans">
-            Confidential Questionnaire
+            Confidential Application
           </span>
-          <h2 className="text-3xl lg:text-4xl mb-4 text-[#2E2E2E]">Client Intake Assessment</h2>
+          <h2 className="text-3xl lg:text-4xl mb-4 text-[#2E2E2E]">Client Intake & Assessment</h2>
           <p className="text-[#2E2E2E]/80 font-sans text-sm leading-relaxed max-w-lg mx-auto">
-            Please share a few details about what you are currently experiencing and your wellness goals so we can determine the right path forward together.
+            Please provide context regarding your current operational baseline and objectives so we can determine if The VSM Institute™ is the right fit for your needs.
           </p>
         </div>
 
         {submitted ? (
           <div className="text-center py-12 space-y-4">
-            <h3 className="text-2xl text-[#2E2E2E]">Thank You</h3>
+            <h3 className="text-2xl text-[#2E2E2E]">Application Received</h3>
             <p className="text-[#2E2E2E]/80 font-sans max-w-md mx-auto">
-              Your intake assessment has been received. Valentine Saint Martin will review your submission and reach out via email to schedule your complimentary video consultation.
+              Your confidential intake has been secured. Valentine Saint Martin will review your profile and reach out via email to schedule your preliminary clinical consultation.
             </p>
           </div>
         ) : (
@@ -87,56 +88,70 @@ export default function IntakeForm() {
               </div>
             </div>
 
-            <div>
-              <label className="block text-xs uppercase tracking-wider text-[#2E2E2E]/70 mb-2">Phone Number</label>
-              <input 
-                type="tel" 
-                name="phone"
-                required
-                value={formData.phone}
-                onChange={handleChange}
-                className="w-full bg-[#F8F5F1] border border-[#2E2E2E]/20 p-3 text-sm text-[#2E2E2E] focus:outline-none focus:border-[#B38A58]"
-                placeholder="(555) 000-0000"
-              />
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-xs uppercase tracking-wider text-[#2E2E2E]/70 mb-2">Phone Number</label>
+                <input 
+                  type="tel" 
+                  name="phone"
+                  required
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="w-full bg-[#F8F5F1] border border-[#2E2E2E]/20 p-3 text-sm text-[#2E2E2E] focus:outline-none focus:border-[#B38A58]"
+                  placeholder="(555) 000-0000"
+                />
+              </div>
+              <div>
+                <label className="block text-xs uppercase tracking-wider text-[#2E2E2E]/70 mb-2">Current Role / Industry</label>
+                <input 
+                  type="text" 
+                  name="role"
+                  required
+                  value={formData.role}
+                  onChange={handleChange}
+                  className="w-full bg-[#F8F5F1] border border-[#2E2E2E]/20 p-3 text-sm text-[#2E2E2E] focus:outline-none focus:border-[#B38A58]"
+                  placeholder="e.g., Executive, Founder, Healthcare"
+                />
+              </div>
             </div>
 
             <div>
-              <label className="block text-xs uppercase tracking-wider text-[#2E2E2E]/70 mb-2">What are you currently experiencing?</label>
+              <label className="block text-xs uppercase tracking-wider text-[#2E2E2E]/70 mb-2">What is the primary catalyst for reaching out today?</label>
               <textarea 
-                name="experience"
+                name="catalyst"
                 rows={4}
                 required
-                value={formData.experience}
+                value={formData.catalyst}
                 onChange={handleChange}
                 className="w-full bg-[#F8F5F1] border border-[#2E2E2E]/20 p-3 text-sm text-[#2E2E2E] focus:outline-none focus:border-[#B38A58]"
-                placeholder="Share details about stress, tension, or life transitions you are navigating..."
+                placeholder="Share details about executive fatigue, burnout, or nervous system dysregulation you are currently navigating..."
               />
             </div>
 
             <div>
-              <label className="block text-xs uppercase tracking-wider text-[#2E2E2E]/70 mb-2">What are your primary wellness goals?</label>
+              <label className="block text-xs uppercase tracking-wider text-[#2E2E2E]/70 mb-2">What does a successful outcome look like for you?</label>
               <textarea 
-                name="goals"
+                name="outcome"
                 rows={3}
                 required
-                value={formData.goals}
+                value={formData.outcome}
                 onChange={handleChange}
                 className="w-full bg-[#F8F5F1] border border-[#2E2E2E]/20 p-3 text-sm text-[#2E2E2E] focus:outline-none focus:border-[#B38A58]"
-                placeholder="What would you like to achieve through our work together?"
+                placeholder="What operational or physical baseline are you trying to restore?"
               />
             </div>
 
             <div>
-              <label className="block text-xs uppercase tracking-wider text-[#2E2E2E]/70 mb-2">Preferred Experience Interest</label>
+              <label className="block text-xs uppercase tracking-wider text-[#2E2E2E]/70 mb-2">Program of Interest</label>
               <select 
-                name="preferredExperience"
-                value={formData.preferredExperience}
+                name="programInterest"
+                value={formData.programInterest}
                 onChange={handleChange}
                 className="w-full bg-[#F8F5F1] border border-[#2E2E2E]/20 p-3 text-sm text-[#2E2E2E] focus:outline-none focus:border-[#B38A58]"
               >
-                <option value="Human Anchor Intro Experience">Human Anchor Intro Experience (60 Min — $175)</option>
-                <option value="Human Anchor Signature Experience">Human Anchor Signature Experience (90 Min — $250)</option>
-                <option value="The Deep Reset Experience">The Deep Reset Experience (2 Hours — $325)</option>
+                <option value="The Human Anchor™ Assessment">The Human Anchor™ Initial Assessment ($225)</option>
+                <option value="Executive Resilience Program">Executive Resilience Program (Multi-Week)</option>
+                <option value="Corporate Workshop">Corporate / Team Workshop Inquiry</option>
                 <option value="Unsure / Let's Discuss">Unsure / Let's Discuss during consultation</option>
               </select>
             </div>
@@ -146,7 +161,7 @@ export default function IntakeForm() {
                 type="submit" 
                 className="w-full bg-[#2E2E2E] text-[#F8F5F1] py-4 text-sm font-sans tracking-wide hover:bg-[#B38A58] transition-colors duration-300"
               >
-                Submit Confidential Intake Assessment
+                Submit Secure Application
               </button>
               <p className="text-xs text-[#2E2E2E]/50 mt-4">
                 All submissions are strictly confidential and protected by professional privacy standards.
