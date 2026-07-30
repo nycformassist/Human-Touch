@@ -1,27 +1,40 @@
 export default function MeetValentine() {
   return (
-    <section className="py-24 bg-white px-6">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-        <div className="aspect-[4/5] bg-gray-200 overflow-hidden relative">
-          {/* Use a warm, professional, editorial-style portrait here */}
-          <img src="/images/valentine-portrait.jpg" alt="Valentine Saint Martin" className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700" />
+    <section className="py-24 bg-[#F8F5F1] px-6">
+      <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div className="space-y-8">
+          <span className="text-sm tracking-widest text-[#B38A58] uppercase font-semibold">
+            The Founder
+          </span>
+          <h2 className="text-3xl md:text-5xl font-light text-[#2E2E2E] leading-tight">
+            Science-Informed.<br />Monastic-Disciplined.<br />Clinical-Grade.
+          </h2>
+          <div className="w-12 h-[1px] bg-[#B38A58]"></div>
+          
+          <div className="space-y-6 text-[#2E2E2E]/80 leading-relaxed">
+            <p className="text-lg font-medium text-[#2E2E2E]">
+              "For more than two decades I've explored one question: Why do some people remain calm under pressure while others become overwhelmed?"
+            </p>
+            <p>
+              My search led me through Biology and Exercise Science, twenty years inside healthcare administration, eighteen years of dedicated Qigong practice, certification as a Meditation Instructor, and three years living a disciplined monastic lifestyle studying Eastern philosophy, contemplative practice, and human development.
+            </p>
+            <p>
+              Today, I integrate those experiences into practical, evidence-informed programs that help modern professionals develop resilience in an increasingly demanding world. 
+            </p>
+          </div>
         </div>
-        <div className="space-y-6">
-          <span className="text-sm tracking-widest text-[#B38A58] uppercase">The Practitioner</span>
-          <h2 className="text-3xl font-light">Meet Valentine Saint Martin</h2>
-          <div className="space-y-4 text-[#2E2E2E]/80 leading-relaxed">
-            <p>
-              For more than two decades, my life's work has been understanding the science of human resilience and the profound impact of mindful presence.
-            </p>
-            <p>
-              My approach bridges the clinical and the contemplative. It is built on a foundation of Biology and Exercise Science, combined with 20 years of experience in healthcare administration—giving me a deep understanding of human physiology and the realities of modern medical stress.
-            </p>
-            <p>
-              Complementing this is 18 years of dedicated Qigong practice and certification as a Meditation Instructor. For three years, I lived a monastic life dedicated to the disciplined study of Eastern philosophy, contemplative practice, and mindful living. That immersive experience profoundly shaped how I understand presence, compassion, and the human capacity for recovery.
-            </p>
-            <p>
-              Today, those lessons are integrated with my scientific education to create The Human Anchor™—helping clients transition from chronic overwhelm to deep physiological calm.
-            </p>
+
+        <div className="bg-gray-200 h-[600px] w-full relative">
+          {/* Replace this with a professional, high-quality portrait of yourself */}
+          <img 
+            src="/images/valentine-portrait.jpg" 
+            alt="Valentine Saint Martin - Founder of VSM Institute" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#2E2E2E]/60 to-transparent"></div>
+          <div className="absolute bottom-6 left-6 right-6 text-white">
+            <h3 className="text-xl tracking-wide uppercase">Valentine Saint Martin</h3>
+            <p className="text-sm text-white/80">Founder, VSM Institute™</p>
           </div>
         </div>
       </div>

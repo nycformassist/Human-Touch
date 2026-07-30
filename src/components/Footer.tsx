@@ -1,33 +1,42 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#2E2E2E] text-[#F8F5F1]/70 py-16 px-6 text-sm font-sans">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
-        <div>
-          <h4 className="text-[#F8F5F1] text-lg mb-4 font-light">The Human Anchor™</h4>
-          <p className="leading-relaxed">
-            Professional Somatic Wellness, Qigong, and Certified Meditation Instruction in New York City.
+    <footer className="bg-[#2E2E2E] text-[#F8F5F1] py-16 px-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-[#F8F5F1]/10 pb-12">
+        
+        {/* Brand Column */}
+        <div className="space-y-4">
+          <h3 className="text-xl tracking-widest uppercase">VSM Institute™</h3>
+          <p className="text-[#F8F5F1]/60 text-sm leading-relaxed max-w-xs">
+            Evidence-informed somatic wellness, nervous system regulation, and resilience training for modern professionals.
           </p>
         </div>
-        <div>
-          <h4 className="text-[#F8F5F1] text-lg mb-4 font-light">Locations</h4>
-          <p className="leading-relaxed">
-            By appointment only.<br/>
-            Serving private clientele across Manhattan, Brooklyn, Queens, and the Bronx.
-          </p>
+
+        {/* Navigation Column */}
+        <div className="space-y-4">
+          <h4 className="text-sm tracking-widest text-[#B38A58] uppercase">Ecosystem</h4>
+          <ul className="space-y-2 text-[#F8F5F1]/70 text-sm">
+            <li>The Human Anchor™ Assessment</li>
+            <li>Executive Resilience Coaching</li>
+            <li>Corporate Wellness (Anchor at Work™)</li>
+            <li>Morning Anchor™ Membership</li>
+          </ul>
         </div>
-        <div>
-          <h4 className="text-[#F8F5F1] text-lg mb-4 font-light">Practice Policies</h4>
-          <ul className="space-y-2">
-            <li>Fully Clothed Sessions</li>
-            <li>Consent-Based Practice</li>
-            <li>Confidentiality Guaranteed</li>
-            <li>No Unscheduled Walk-ins</li>
+
+        {/* Contact Column */}
+        <div className="space-y-4">
+          <h4 className="text-sm tracking-widest text-[#B38A58] uppercase">Inquiries</h4>
+          <ul className="space-y-2 text-[#F8F5F1]/70 text-sm">
+            <li>New York City & The Bronx</li>
+            <li>healthcarebyvalentine@gmail.com</li>
           </ul>
         </div>
       </div>
-      <div className="max-w-6xl mx-auto mt-16 pt-8 border-t border-[#F8F5F1]/10 text-center text-xs opacity-50">
-        <p>© {new Date().getFullYear()} The Human Anchor™. All Rights Reserved.</p>
-        <p className="mt-2">The services provided are educational and somatic in nature and are not a substitute for medical care, licensed psychotherapy, or licensed massage therapy.</p>
+
+      <div className="max-w-6xl mx-auto pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-[#F8F5F1]/40 space-y-4 md:space-y-0">
+        <p>&copy; {new Date().getFullYear()} VSM Institute™. All rights reserved.</p>
+        <p className="max-w-xl text-right">
+          Disclaimer: The VSM Institute™ provides performance, resilience, and wellness coaching. Our services are educational and are not a substitute for professional medical, psychiatric, or psychological care.
+        </p>
       </div>
     </footer>
   );
